@@ -1,0 +1,29 @@
+// USER VARIABLES SECTION
+// COLORS
+$primary-accent: #56CCF2; // Primary Accent Color
+$primary-bgcolor: #fafafa; //Primary Background Color
+$secondary-accent: #5CB85C; // Primary Accent Color
+$main-font-color: #333333; // Primary Text Color
+$light-font-color: #F2F2F2; // White Titles
+
+// FONTS
+$fontsize: 16; // Html, Body Primary Font Size
+// $systemfont: -apple-system,
+// BlinkMacSystemFont,
+// Arial,
+// sans-serif; // System Font Family
+$main-font: Roboto-Regular,
+sans-serif; // Roboto font family
+$title-font: GothamPro-Bold,
+sans-serif; // Gotham Pro font family
+
+// BORDERS
+$border-radius: 5px;
+
+// SHADOWS
+$main-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 30px;
+$gutter: $grid-gutter-width;

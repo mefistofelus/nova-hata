@@ -1,0 +1,56 @@
+// DEFAULT DOCUMENT STYLES
+html {
+  font-size: $fontsize+px; // $fontsize - береться из _vars.scss
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  -webkit-font-feature-settings: 'liga';
+  font-feature-settings: 'liga';
+  box-sizing: inherit;
+}
+
+input,
+textarea {
+  outline: none;
+
+  &:focus:required:invalid {
+    border-color: red
+  }
+
+  &:required:valid {
+    border-color: green
+  }
+}
+
+::placeholder {
+  color: #666;
+}
+
+::selection {
+  background-color: $primary-accent;
+  color: #fff;
+}
+
+body {
+  font-family: $main-font;
+  font-size: inherit;
+  min-width: 320px;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background-color: $primary-bgcolor;
+  color: set-text-color($primary-bgcolor);
+  -webkit-font-smoothing: antialiased;
+  //color: $main-font-color;
+}
