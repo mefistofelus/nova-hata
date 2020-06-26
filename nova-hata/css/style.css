@@ -10,6 +10,8 @@
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
 
+@import url(../../node_modules/swiper/css/swiper.min.css);
+
 *,
 *::before,
 *::after {
@@ -1790,6 +1792,62 @@ body {
 
 .section .section__title {
   margin-bottom: 0.9375rem;
+}
+
+.slider-item__location {
+  margin-bottom: .3em;
+  font-family: Roboto-Regular, sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.3125rem;
+  color: #56CCF2;
+}
+
+.slider-item__location .map-icon {
+  font-size: 20px;
+}
+
+.slider-item__image {
+  border-radius: 5px;
+}
+
+.slider-item__info {
+  padding: 0.6em 0;
+  font-family: Roboto-Regular, sans-serif;
+}
+
+.slider-item__info .slider-item__price {
+  font-weight: 900;
+  font-size: 1rem;
+  line-height: 19px;
+  color: #000000;
+}
+
+.slider-item__info .slider-item__date {
+  font-weight: 300;
+  font-size: 0.625rem;
+  line-height: 0.75rem;
+  color: #828282;
+}
+
+.slider-item .btn-details {
+  display: inline-block;
+  margin-top: .3em;
+  padding: .3em 1.5em;
+  font-size: 0.9375rem;
+  line-height: 1.3125rem;
+  color: #5CB85C;
+  background: #FFFFFF;
+  border: 1px solid #5CB85C;
+  border-radius: 5px;
+  -webkit-transition: 0.35s;
+  -o-transition: 0.35s;
+  transition: 0.35s;
+}
+
+.slider-item .btn-details:hover {
+  background-color: #5CB85C;
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 @media (min-width: 576px) {

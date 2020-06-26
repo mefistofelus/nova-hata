@@ -1,7 +1,66 @@
+// Required Core Stylesheet
+@import "../../node_modules/swiper/css/swiper.min.css";
+
 .section {
   padding: rem(40) 0;
 
   .section__title {
     margin-bottom: rem(15);
+  }
+}
+
+.slider-item {
+  &__location {
+    margin-bottom: .3em;
+    font-family: $main-font;
+    font-size: rem(12);
+    line-height: rem(21);
+    color: $primary-accent;
+
+    .map-icon {
+      font-size: 20px;
+    }
+  }
+
+  &__image {
+    border-radius: $border-radius;
+  }
+
+  &__info {
+    padding: 0.6em 0;
+    font-family: $main-font;
+
+    .slider-item__price {
+      font-weight: 900;
+      font-size: rem(16);
+      line-height: 19px;
+      color: #000000;
+    }
+
+    .slider-item__date {
+      font-weight: 300;
+      font-size: rem(10);
+      line-height: rem(12);
+      color: #828282;
+    }
+  }
+
+  .btn-details {
+    display: inline-block;
+    margin-top: .3em;
+    padding: .3em 1.5em;
+    font-size: rem(15);
+    line-height: rem(21);
+    color: $primary-btn-color;
+    background: #FFFFFF;
+    border: 1px solid $primary-btn-color;
+    border-radius: $border-radius;
+    transition: $transition;
+
+    &:hover {
+      background-color: $primary-btn-color;
+      color: #FFFFFF;
+      text-decoration: none;
+    }
   }
 }
